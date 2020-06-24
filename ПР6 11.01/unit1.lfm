@@ -1,0 +1,43 @@
+object Form1: TForm1
+  Left = 404
+  Height = 382
+  Top = 145
+  Width = 696
+  Caption = 'Form1'
+  ClientHeight = 382
+  ClientWidth = 696
+  LCLVersion = '2.0.6.0'
+  object DBGrid1: TDBGrid
+    Left = 24
+    Height = 296
+    Top = 0
+    Width = 504
+    Color = clWindow
+    Columns = <>
+    TabOrder = 0
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+    )
+    UseMetadata = False
+    Connected = True
+    HostName = '127.0.0.1'
+    Port = 0
+    Database = 'nikolaenko'
+    User = 'Cry_cat'
+    Password = 'hardhit'
+    Protocol = 'mysql'
+    left = 424
+    top = 64
+  end
+  object ZTable1: TZTable
+    Connection = ZConnection1
+    left = 424
+  end
+  object DataSource1: TDataSource
+    left = 424
+    top = 136
+  end
+end
